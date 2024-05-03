@@ -194,13 +194,13 @@ section h3::after {
 .column3 {
     flex: 0 1 calc(30%);
     padding: 10px;
-    background: linear-gradient(to bottom, #F2763C, #000000);
+    background: linear-gradient(to bottom, #78C191, #000000);
 }
 
 .column3 h1 {
     font-size: 20px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     font-weight: bolder;
     margin-top: 180px;
 }
@@ -208,13 +208,13 @@ section h3::after {
 .column3 h2 {
     font-size: 13px;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     margin-left:80px;
     margin-right: 80px;
 }
 
 .column3 a{
-    background-color: #F2763C;
+    background-color: #78C191;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -275,7 +275,7 @@ section h3::after {
 }
 
 .recuadro input {
-    background-color: #96E500;
+    background-color: #D5F1E5;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;

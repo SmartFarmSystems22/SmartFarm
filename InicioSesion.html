@@ -8,6 +8,10 @@
     <!--<link rel="stylesheet" href="style.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
     <link rel="stylesheet" href="css/misestilos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xxdFh0+za4tBK2LZy3ZsPn2K+hIhFf1zOTBJc4G8g/eABKcyS4XM/P6Orz5sA0Xw" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-6NmNnnU5lO3qcUXr3LO/2RTxGXd/kRxrCxXd1v9Mf7rV7lE7AxrHeUnDkEnP5fm9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <style>
         body {
             background-color: #000;
@@ -108,70 +112,107 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo habit life.png" height="50" style="margin-left: 20px;">
-        <i class="fas fa-search search-icon"></i>
+    <header style="background-color: #ffffff; padding: 10px; font-family: 'Quicksand', sans-serif">
+        <a href="index.html">
+            <img src="images/SmartFarmLogo.jpeg" height="100" style="margin-left: 20px;">
+        </a>
         <nav>
             <div class="menu-bar">
-                <div class="menu-bar">
-                   
-                    <a href="javascript:window.history.back()" class="Salir">HABITLIFE
-                    </a>
-                </div>
-                <a href="Alimentacion/malimentacion.html" class="menu-item">Alimentacion</a>
-                <a href="Estudio/Estudio.html" class="menu-item">Estudio</a>
-                <a href="#" class="menu-item">Ejercicios</a>
-                <a href="https://www.facebook.com/groups/954492926210624/" class="menu-item">Comunidad</a>
-                <div class="menu-item">Herramientas</div>
-                <div class="menu-item">Configuracion</div>
+                <a href="Alimentacion/malimentacion.html" class="menu-item">Nosotros</a>
+                <a href="#" class="menu-item">Servicios</a>
+                <a href="#" class="menu-item">Contáctanos</a>
+                <a href="#" class="menu-item">Blog</a>
+                <a href="InicioSesion.html" class="menu-item2">Crear Cuenta</a>
+                <a href="Registro.html" class="menu-item3">Ingresar</a>
             </div>
         </nav>
-    </header>
+    </header>  
     <main>
         <div class="container">
-            <div class="column2">
+            <div class="column4" style="font-family: 'Quicksand', sans-serif;">
                 <section>
-                    <h1>INICIAR SESIÓN EN HABIT LIFE</h1>
-                    <h2>INICIAR SESIÓN CON</h2>
-                    <div class="registro-buttons">
-                        <a class="facebook-button" href="https://www.facebook.com">
-                          <span><img src="images/facebook.png" alt="Logo de Facebook" width="25" height="25"></span>
-                          Facebook
-                        </a>
-                
-                        <a class="google-button" href="https://accounts.google.com">
-                          <span><img src="images/gmail icono.png" alt="Logo de Google" width="25" height="25"></span>
-                          Google
-                        </a>
-                      </div
+                    <h1 style="margin-left: 10px;">INICIAR SESIÓN EN HABIT LIFE</h1>
+                    <h2 style="margin-left: 130px; margin-bottom: 30px;">INICIAR SESIÓN CON</h2>
+                    <a class="facebook-button" href="https://www.facebook.com" style="margin-left: 190px; margin-top: 100px;">
+                        <span><img src="images/facebook silueta.png" alt="Logo de Facebook" width="25" height="25"></span>
+                        Facebook
+                      </a>
+              
+                      <a class="google-button" href="https://accounts.google.com">
+                        <span><img src="images/gmail icono.png" alt="Logo de Google" width="25" height="25"></span>
+                        Google
+                      </a>
                     
-                    <h3>O</h3>
-                    <div class="recuadro">
+                    <h3 style="margin-left: 140px; margin-top: 20px; ">O</h3>
+                    <div class="recuadro" style="margin-bottom: 30px;">
                         <form>
                             <input type="text" id="email" name="email" placeholder="Nombre de usuario o correo electrónico" required onfocus="this.placeholder=''">
                             <input type="password" id="password" name="password" placeholder="Contraseña" required onfocus="this.placeholder=''">
                         </form>
                     </div>
-                    <a href="#">Iniciar Sesión</a>
+                    <head>
+                        <title>Botón con notificación de registro</title>
+                        <script>
+                            function mostrarNotificacion() {
+                                alert("¡Cuenta logueada!");
+                            }
+                        </script>
+                    </head>
+                    <body>
+                    <a style="margin-left: 230px; margin-top:50px;"><button onclick="mostrarNotificacion()">Iniciar Sesión</button></a>
+                    </body>
                 </section>
             </div>
-            <div class="column3">
+            <div class="column3" style="margin-left: 100px;">
                 <section>
                     <h1>¿NO ERES MIEMBRO?</h1>
                     <h2>Regístrate ahora y no te pierdas de las miles de herramientas que ofrecemos</h2>
-                    <a href="Registro.html">Regístrate ahora</a>
+                    <a href="Registro.html" style="margin-left: 72px;">Regístrate ahora</a>
                 </section>
             </div>
         </div>
     </main>
-    <footer>    
-        <img src="images/logo habit life.png" height="30" style="margin-right: 20px; margin-top: 40px;">
-        <a href="#">Acerca de</a>
-        <a href="contactanos.html">Contactanos</a>
-        <a href="#">Community</a>
-        <a href="#">Términos y condiciones</a>
-        <a href="#">Ayuda</a>
-        <p>@2023 HabitLife. Todos los derechos reservados.</p>
+    <footer style="padding: 20px 0; text-align: left; font-family: 'Quicksand', sans-serif; background-color: #D5F1E5;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <!-- Columna 1: Logo -->
+            <div style="flex: 1;">
+                <img src="images/SmartFarmLogo.jpeg" height="150" style="margin-left: 50px;">
+            </div>
+            <!-- Columna 2: Botones -->
+            <div style="flex: 1; justify-content: space-between; align-items: flex-start;">
+                <a href="#" style="display: block; margin-bottom: 10px;">Contáctanos</a>
+                <a href="#" style="display: block; margin-bottom: 10px;">&#x2709; info@smartfarm.pe</a>
+                <a href="#" style="display: block; margin-bottom: 10px;">Empresas</a>
+                <a href="#" style="display: block; margin-bottom: 10px;">Inscripción</a>
+                <a href="#" style="display: block; margin-bottom: 10px;">Términos y condiciones</a>
+            </div>
+            <!-- Columna 3: Información de locales y horarios -->
+            <div style="flex: 1">
+                <div style="margin-bottom: 10px;">
+                    <p style="font-size: 20px; font-weight: bold; margin-top: 20px; margin-bottom: 10px;">LOCALES Y CONTACTO</p>
+                    <p>Av. San Luis 2645, San Borja</p>
+                    <p>941 145 243</p>
+                    <p>01 635 2774</p>
+                </div>
+            </div>
+            <!-- Columna 4: Información de horarios -->
+            <div style="flex: 1">
+                <div style="margin-bottom: 5px;">
+                    <p style="font-size: 20px; font-weight: bold; margin-top: 20px; margin-bottom: 10px;">HORARIOS</p>
+                    <p style="font-weight: bold;">San Borja</p>
+                    <p>Atención: Lunes a Sábado - 8 a.m. - 10 p.m.</p>
+                    <p>Domingos - 8 a.m. - 8 p.m.</p>
+                    <p>1012457896</p>
+                </div>
+            </div>
+        </div>
+        <p style="margin-top: 10px; text-align: center;">@2024 Smart Farm Systems | Todos los derechos reservados.</p>
+        <div style="text-align: left; margin-left: 50px; margin-top: -20px; display: flex; align-items: center;">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook silueta.png" height="35" style="margin-right: 20px;"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram silueta.png" height="35" style="margin-right: 20px;"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube silueta.png" height="40"></a>
+        </div>
+    
     </footer>
 </body>
 
