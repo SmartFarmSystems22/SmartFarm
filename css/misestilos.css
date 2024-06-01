@@ -399,3 +399,196 @@ footer a {
     text-decoration: none;
     font-size: 15px;
 }
+
+#encabezado {
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+#encabezado .contenido {
+    display: flex;           /* Establece flexbox para alinear elementos horizontalmente */
+    align-items: center;     /* Alinea los elementos verticalmente en el centro */
+    gap: 10px;               /* Espacio entre los elementos */
+}
+
+#encabezado h2 {
+    font-size: 35px;
+    color: #78C191;
+    padding: 0px 0;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+#encabezado h3 {
+    font-size: 35px;
+    color: #48835d;
+    font-weight: bold;
+    padding: 0px 0;
+}
+
+#encabezado a {
+    background-color: #96E500;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#encabezado p {
+    font-size: 15px;
+    color: #fff;
+    padding: 40px 0;
+    margin-left: 30px;
+}
+
+#encabezado .opciones {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recuadro1 {
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 2.25;
+    margin-right: 10px;
+}
+
+#recuadro1 h1 {
+    color: #61aa7b;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.btn-Vermás {
+    background-color: #61aa7b; /* Color rosado */
+    color: white; /* Color del texto */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 15px; /* Tamaño del texto */
+    margin-bottom: 10px;
+}
+
+#contenedor {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos horizontalmente */
+}
+
+#recuadro1, #recuadro2 {
+    padding: 10px; /* Agrega un poco de padding alrededor de los recuadros */
+    box-sizing: border-box; /* Incluye el padding dentro del ancho y alto definidos */
+}
+
+#recuadro2 {
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 1.5;
+}
+
+#recuadro2 h1{
+    color: #61aa7b;
+    font-size: 23px;
+    text-align: center ;
+    font-weight: bold;
+}
+
+#contenedor2 {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos horizontalmente */
+}
+
+#recuadro3{
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 1.20;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#recuadro3 h1{
+    color: #61aa7b;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+#recuadro3 h2{
+    color: #61aa7b;
+    font-size: 20px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#recuadro3 p1{
+    color: #000000;
+    font-size: 15px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+#recuadro4{
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 1;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#recuadro4 h1{
+    color: #61aa7b;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.circular-image {
+    width: 100px;  /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Asegúrate de que el alto y el ancho sean iguales */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover;  /* Asegura que la imagen cubra completamente el contenedor */
+}
+
+#recuadro4 h2{
+    color: #61aa7b;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#recuadro4 p1{
+    color: #000000;
+    font-size: 12px;
+    text-align: center;
+}
+
+#recuadro5{
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 1;
+    margin-right: 10px;
+    margin-top: 20px;
+    flex: 1.5;
+}
+
+#recuadro5 h1{
+    color: #61aa7b;
+    font-size: 23px;
+    text-align: center ;
+    font-weight: bold;
+}
