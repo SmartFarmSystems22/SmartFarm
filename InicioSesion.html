@@ -145,22 +145,12 @@
                     
                     <h3 style="margin-left: 140px; margin-top: 20px; ">O</h3>
                     <div class="recuadro" style="margin-bottom: 30px;">
-                        <form>
-                            <input type="text" id="email" name="email" placeholder="Nombre de usuario o correo electrónico" required onfocus="this.placeholder=''">
-                            <input type="password" id="password" name="password" placeholder="Contraseña" required onfocus="this.placeholder=''">
-                        </form>
+                        <form action="Inicio.html">
+                            <input type="text" placeholder="Nombre de usuario o correo electrónico">
+                            <input type="password" placeholder="Contraseña">
+                            <button type="submit">Iniciar Sesión</button>
+                        </form>                        
                     </div>
-                    <head>
-                        <title>Botón con notificación de registro</title>
-                        <script>
-                            function mostrarNotificacion() {
-                                alert("¡Cuenta logueada!");
-                            }
-                        </script>
-                    </head>
-                    <body>
-                    <a style="margin-left: 230px; margin-top:50px;"><button onclick="mostrarNotificacion()">Iniciar Sesión</button></a>
-                    </body>
                 </section>
             </div>
             <div class="column3" style="margin-left: 100px;">
@@ -180,7 +170,7 @@
             </div>
             <!-- Columna 2: Botones -->
             <div style="flex: 1; justify-content: space-between; align-items: flex-start;">
-                <a href="#" style="display: block; margin-bottom: 10px;">Contáctanos</a>
+                <a href="contactanos.html" style="display: block; margin-bottom: 10px;">Contáctanos</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">&#x2709; info@smartfarm.pe</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Empresas</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Inscripción</a>

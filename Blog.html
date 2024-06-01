@@ -8,28 +8,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,700">
     <link rel="stylesheet" href="css/misestilos.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xxdFh0+za4tBK2LZy3ZsPn2K+hIhFf1zOTBJc4G8g/eABKcyS4XM/P6Orz5sA0Xw" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-6NmNnnU5lO3qcUXr3LO/2RTxGXd/kRxrCxXd1v9Mf7rV7lE7AxrHeUnDkEnP5fm9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-    <!-- Additional CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- Animate CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     
     <style>
         body {
             background-color: #ffffff;
-            color: #000;
+            color: #fff;
             font-family: 'Mulish', sans-serif;
         }
 
         header {
-            background-color: #ffffff;
             text-align: left;
             padding: 20px;
             display: flex;
@@ -38,34 +31,34 @@
         }
 
         header h1 {
-            font-size: 30px;
+            font-size: 40px;
         }
 
         #encabezado {
             display: flex;
-            align-items: center; /* Alinear elementos verticalmente */
+            align-items: center;
             text-align: left;
-            background-color: rgb(255, 255, 255); /* Reducida opacidad */
+            background-color: rgb(255, 255, 255);
             color: black;
-            padding: 40px 0; /* Ajusta la altura del encabezado */
+            padding: 40px 0;
             position: relative;
-            width: 100%; /* Extender el encabezado al 100% del ancho */
-            margin: 0; /* Eliminar márgenes */
+            width: 100%;
+            margin: 0;
         }
 
         .contenido {
-            flex: 1; /* Ocupar el espacio disponible */
-            padding: 0 40px; /* Espacio entre el contenido y la imagen */
+            flex: 1;
+            padding: 0 40px;
         }
 
         .imagen {
-            flex: 1; /* Ocupar el espacio disponible */
-            text-align: right; /* Alinear la imagen a la derecha */
+            flex: 1;
+            text-align: right;
         }
 
         .imagen img {
             width: auto;
-            height: 500px; /* Ajustar altura automáticamente */
+            height: 520px;
             border-radius: 20px;
             margin-right: 50px;
         }
@@ -75,27 +68,28 @@
         }
 
         .btn-descubre {
-            background-color: #F49292; /* Color rosado */
-            color: white; /* Color del texto */
-            padding: 15px 30px; /* Ajusta el padding para hacer el botón más grande */
+            background-color: #F49292;
+            color: white;
+            padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
-            font-size: 25px; /* Tamaño del texto */
+            font-size: 25px;
         }
 
         .btn-descubre:hover {
-            background-color: #F47C7C; /* Cambia el color al pasar el ratón */
+            background-color: #F47C7C;
         }
 
         #encabezado h2 {
-            font-size: 45px;
+            font-size: 60px;
             color: #000000;
             padding: 5px 0;
             margin-left: 40px;
         }
 
         #encabezado h4 {
+            text-align: justify; 
             font-size: 20px;
             color: #000000;
             margin-left: 45px;
@@ -129,7 +123,7 @@
         }
 
         ul {
-            list-style: none; /* Elimina las viñetas de la lista */
+            list-style: none;
         }
 
         li {
@@ -137,7 +131,7 @@
         }
 
         input[type="checkbox"] {
-            display: none; /* Oculta el checkbox nativo */
+            display: none;
         }
 
         label.checkbox-label {
@@ -147,11 +141,11 @@
         }
 
         label.checkbox-label::before {
-            content: " "; /* Espacio en blanco para el pseudo-elemento */
+            content: " ";
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-color: rgb(255, 255, 255); /* Color del cuadro cuando no está marcado */
+            background-color: rgb(255, 255, 255);
             border: 1px solid #888;
             position: absolute;
             left: 0;
@@ -159,69 +153,57 @@
         }
 
         input[type="checkbox"]:checked + label.checkbox-label::before {
-            background-color: rgb(102, 150, 102); /* Cambia el color del cuadro cuando se marca */
+            background-color: rgb(102, 150, 102);
         }
 
-        .form-imagen-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-        }
-
-        .contact-form-container {
-            background-color: #ffffff;
-            padding: 30px 20px;
-            flex: 1;
-        }
-
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f2f2f2;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .contact-form h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
-            color: #333;
+        .blogs-posts {
+            margin-top: 50px;
             text-align: center;
         }
 
-        .contact-form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
+        .posts {
+            margin-bottom: 50px;
+            margin-left: 30px;
+            width: 542px;
+            height: 399px;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: #D9D9D9;
+            display: inline-block;
+            vertical-align: top;
+        }
+            
+        .posts p {
+            width: 497px;
+            color: #58A371;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            padding-left: 30px;
+        }
+            
+        .posts img {
+            width: 542px;
+            height: 215px;
+            flex-shrink: 0;
+            border-radius: 25px 25px 0px 0px;
+        }
+            
+        .posts h4 {
+            width: 502px;
+            height: 58px;
+            flex-shrink: 0;
+            color: #000;
+            font-family: Quicksand;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 17px;
+            padding-left: 30px;
         }
 
-        .contact-form textarea,
-        .contact-form input[type="email"],
-        .contact-form input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #58A371;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .contact-form button:hover {
-            background-color: #3ba19a;
-        }
     </style>
 </head>
 
@@ -234,31 +216,45 @@
             <div class="menu-bar">
                 <a href="Nosotros.html" class="menu-item">Nosotros</a>
                 <a href="Servicios.html" class="menu-item">Servicios</a>
-                <a href="#contactanos" class="menu-item">Contáctanos</a>
-                <a href="Blog.html" class="menu-item">Blog</a>
+                <a href="contactanos.html" class="menu-item">Contáctanos</a>
+                <a href="#blogs" class="menu-item">Blog</a>
                 <a href="Registro.html" class="menu-item2">Crear Cuenta</a>
                 <a href="InicioSesion.html" class="menu-item3">Ingresar</a>
             </div>
         </nav>
     </header>    
     <main>
-        <div class="form-imagen-container">
-            <div class="imagen">
-                <img src="images/granja-tec.jpeg">
+        <div class="blogs-posts" id="blogs">
+            <h2 class="separator" style="color:#000;">
+                Blogs destacados
+            </h2> 
+            <div class="posts">
+                <a href="blog1.html">
+                    <img src="images/blog/1blog.jpg" alt="blog1">
+                    <p>Maximiza tu Eficiencia Hídrica con Riego Automatizado</p>
+                    <h4>En el mundo de la agricultura moderna, la eficiencia en el uso del agua no es solo una necesidad, es ...</h4>
+                </a>
             </div>
-            <div class="contact-form-container">
-                <div class="contact-form">
-                    <form>
-                        <h2>Contáctanos</h2>
-                        <label for="nombre">Ingrese su nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Ingrese su email</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="consulta">Ingrese su consulta</label>
-                        <textarea id="consulta" name="consulta" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+            <div class="posts">
+                <a href="blog2.html">
+                    <img src="images/blog/2blog.jpeg" alt="blog2">
+                    <p>Revoluciona la Nutrición de tu Ganado con Alimentación Automatizada</p>
+                    <h4>La alimentación de tu ganado juega un papel crucial en su salud y productividad. Con SmartFarm Systems ....</h4>
+                </a>
+            </div>
+            <div class="posts">
+                <a href="blog3.html">
+                    <img src="images/blog/3blog.jpg" alt="blog3">
+                    <p>Toma Decisiones Informadas con Monitoreo de Cultivos en Tiempo Real</p>
+                    <h4>La agricultura inteligente significa tomar decisiones basadas en datos, no en conjeturas. Nuestro sistema de monitoreo ....</h4>
+                </a>
+            </div>
+            <div class="posts">
+                <a href="blog4.html">
+                    <img src="images/blog/4blog.jpeg" alt="blog4">
+                    <p>Protege tu Inversión Agrícola con Tecnología de Vigilancia Avanzada</p>
+                    <h4>La seguridad de tu granja es tan importante como la producción misma. Nuestras cámaras de vigilancia avanzadas....</h4>
+                </a>
             </div>
         </div>
     </main>
@@ -269,7 +265,7 @@
                 <img src="images/SmartFarmLogo.jpeg" height="150" style="margin-left: 50px;">
             </div>
             <div style="flex: 1; justify-content: space-between; align-items: flex-start;">
-                <a href="#contactanos" style="display: block; margin-bottom: 10px;">Contáctanos</a>
+                <a href="contactanos.html" style="display: block; margin-bottom: 10px;">Contáctanos</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">&#x2709; info@smartfarm.pe</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Empresas</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Inscripción</a>
@@ -299,7 +295,6 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram silueta.png" height="35" style="margin-right: 20px;"></a>
             <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube silueta.png" height="40"></a>
         </div>
-
     </footer>
 </body>
 

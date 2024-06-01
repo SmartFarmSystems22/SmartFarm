@@ -24,12 +24,11 @@
     <style>
         body {
             background-color: #ffffff;
-            color: #000;
+            color: #000000; /* Cambiar el color del texto a negro */
             font-family: 'Mulish', sans-serif;
         }
 
         header {
-            background-color: #ffffff;
             text-align: left;
             padding: 20px;
             display: flex;
@@ -38,34 +37,34 @@
         }
 
         header h1 {
-            font-size: 30px;
+            font-size: 40px;
         }
 
         #encabezado {
             display: flex;
-            align-items: center; /* Alinear elementos verticalmente */
+            align-items: center;
             text-align: left;
-            background-color: rgb(255, 255, 255); /* Reducida opacidad */
+            background-color: rgb(255, 255, 255);
             color: black;
-            padding: 40px 0; /* Ajusta la altura del encabezado */
+            padding: 40px 0;
             position: relative;
-            width: 100%; /* Extender el encabezado al 100% del ancho */
-            margin: 0; /* Eliminar márgenes */
+            width: 100%;
+            margin: 0;
         }
 
         .contenido {
-            flex: 1; /* Ocupar el espacio disponible */
-            padding: 0 40px; /* Espacio entre el contenido y la imagen */
+            flex: 1;
+            padding: 0 40px;
         }
 
         .imagen {
-            flex: 1; /* Ocupar el espacio disponible */
-            text-align: right; /* Alinear la imagen a la derecha */
+            flex: 1;
+            text-align: right;
         }
 
         .imagen img {
             width: auto;
-            height: 500px; /* Ajustar altura automáticamente */
+            height: 520px;
             border-radius: 20px;
             margin-right: 50px;
         }
@@ -75,27 +74,28 @@
         }
 
         .btn-descubre {
-            background-color: #F49292; /* Color rosado */
-            color: white; /* Color del texto */
-            padding: 15px 30px; /* Ajusta el padding para hacer el botón más grande */
+            background-color: #F49292;
+            color: white;
+            padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s ease;
-            font-size: 25px; /* Tamaño del texto */
+            font-size: 25px;
         }
 
         .btn-descubre:hover {
-            background-color: #F47C7C; /* Cambia el color al pasar el ratón */
+            background-color: #F47C7C;
         }
 
         #encabezado h2 {
-            font-size: 45px;
+            font-size: 60px;
             color: #000000;
             padding: 5px 0;
             margin-left: 40px;
         }
 
         #encabezado h4 {
+            text-align: justify; 
             font-size: 20px;
             color: #000000;
             margin-left: 45px;
@@ -129,7 +129,7 @@
         }
 
         ul {
-            list-style: none; /* Elimina las viñetas de la lista */
+            list-style: none;
         }
 
         li {
@@ -137,7 +137,7 @@
         }
 
         input[type="checkbox"] {
-            display: none; /* Oculta el checkbox nativo */
+            display: none;
         }
 
         label.checkbox-label {
@@ -147,11 +147,11 @@
         }
 
         label.checkbox-label::before {
-            content: " "; /* Espacio en blanco para el pseudo-elemento */
+            content: " ";
             display: inline-block;
             width: 20px;
             height: 20px;
-            background-color: rgb(255, 255, 255); /* Color del cuadro cuando no está marcado */
+            background-color: rgb(255, 255, 255);
             border: 1px solid #888;
             position: absolute;
             left: 0;
@@ -159,68 +159,111 @@
         }
 
         input[type="checkbox"]:checked + label.checkbox-label::before {
-            background-color: rgb(102, 150, 102); /* Cambia el color del cuadro cuando se marca */
+            background-color: rgb(102, 150, 102);
         }
 
-        .form-imagen-container {
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
+        .services-content{
+            font-size: 30px; /* Reducir el tamaño de la fuente */
         }
 
-        .contact-form-container {
-            background-color: #ffffff;
-            padding: 30px 20px;
-            flex: 1;
+        .services-content h1{
+        margin-left: 150px;
         }
 
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f2f2f2;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .services-button {
+            margin: 100px;
+            margin-left: 120px;
         }
 
-        .contact-form h2 {
-            margin-bottom: 20px;
-            font-size: 28px;
-            color: #333;
-            text-align: center;
-        }
-
-        .contact-form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-        }
-
-        .contact-form textarea,
-        .contact-form input[type="email"],
-        .contact-form input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        .contact-form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #58A371;
-            border: none;
-            border-radius: 5px;
-            color: white;
-            font-size: 18px;
+        .services-button button {
+            height: 90px;
+            width: 390px;
+            background-color: #F17268;
+            border-radius: 5px 5px 5px 25px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            color: #000;
+            font-size: 40px;
+            font-weight: 700;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        .contact-form button:hover {
-            background-color: #3ba19a;
+        .services-button button a span {
+            color: #000;
+        }
+
+        .services-button button:hover {
+            background-color: #ec4a3e;
+            color: #fff;
+        }
+
+        .services-button button:hover a span {
+            color: #fff;
+        }
+
+        .main-services-content h2 {
+            width: 476px;
+            color: #58A371;
+            margin-top: 0;
+        }
+
+        .main-services-content img {
+            width: 650px;
+            height: auto;
+            object-fit: cover;
+            padding: 100px;
+        }
+
+        .content_left{
+            font-size: 18px; 
+        }
+
+        .content_left p{
+            width: 476px;
+            font-size: 18px; 
+            text-align: justify;
+            color: #000000; 
+        }
+
+        .content_right{
+            font-size: 18px; 
+        }
+
+        .content_right p{
+            width: 476px;
+            font-size: 18px; 
+            text-align: justify;
+            color: #000000; 
+        }
+
+        .service_camara{
+            display: flex;
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: space-around;
+        }
+
+        .service_riego {
+            display: flex;
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: space-around;
+            background-color: #D9D9D9;
+        }
+
+        .service_alimentacion{
+            display: flex;
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: space-around;
+        }
+
+        .service_monitoreo {
+            display: flex;
+            align-items: center; /* Alinea verticalmente los elementos */
+            justify-content: space-around;
+            background-color: #D9D9D9;
         }
     </style>
 </head>
@@ -233,8 +276,8 @@
         <nav>
             <div class="menu-bar">
                 <a href="Nosotros.html" class="menu-item">Nosotros</a>
-                <a href="Servicios.html" class="menu-item">Servicios</a>
-                <a href="#contactanos" class="menu-item">Contáctanos</a>
+                <a href="#servicios" class="menu-item">Servicios</a>
+                <a href="contactanos.html" class="menu-item">Contáctanos</a>
                 <a href="Blog.html" class="menu-item">Blog</a>
                 <a href="Registro.html" class="menu-item2">Crear Cuenta</a>
                 <a href="InicioSesion.html" class="menu-item3">Ingresar</a>
@@ -242,24 +285,38 @@
         </nav>
     </header>    
     <main>
-        <div class="form-imagen-container">
-            <div class="imagen">
-                <img src="images/granja-tec.jpeg">
-            </div>
-            <div class="contact-form-container">
-                <div class="contact-form">
-                    <form>
-                        <h2>Contáctanos</h2>
-                        <label for="nombre">Ingrese su nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                        <label for="email">Ingrese su email</label>
-                        <input type="email" id="email" name="email" required>
-                        <label for="consulta">Ingrese su consulta</label>
-                        <textarea id="consulta" name="consulta" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+        <div id="servicios">
+            <div class="main-services-content">
+                <div class="service_camara">
+                    <div class="content_left">
+                        <h2>Cámaras de Vigilancia</h2>
+                        <p>Asegura tu inversión con cámaras de vigilancia de alta tecnología. Monitorea tu propiedad las 24 horas del día para proteger tus instalaciones y cultivos. Nuestras cámaras ofrecen una resolución de alta definición, visión nocturna y detección de movimiento, permitiéndote estar al tanto de cualquier actividad sospechosa. Además, puedes acceder a las grabaciones y transmisiones en vivo desde cualquier dispositivo conectado a internet, brindándote tranquilidad y control total sobre la seguridad de tu granja.</p>
+                    </div>
+                    <img src="images/servicios/camara.jpeg" alt="Cámaras de Vigilancia">
+                </div>
+                <div class="service_riego">
+                    <img src="images/servicios/riego.jpeg" alt="Riego Automatizado">
+                    <div class="content_right">
+                        <h2>Riego Automatizado</h2>
+                        <p>Optimiza el uso del agua con nuestros sistemas de riego automatizado. Programa y ajusta el riego según las necesidades específicas de tus cultivos, garantizando que cada planta reciba la cantidad adecuada de agua en el momento preciso. Este sistema no solo ahorra agua, sino que también aumenta la eficiencia del riego, mejora la salud de las plantas y maximiza la producción. Con sensores de humedad del suelo y control remoto, puedes gestionar el riego de tu granja desde cualquier lugar, asegurando un crecimiento óptimo de tus cultivos.</p>
+                    </div>
+                </div>
+                <div class="service_alimentacion">
+                    <div class="content_left">
+                        <h2>Alimentación Automatizada</h2>
+                        <p>Optimiza la nutrición de tu ganado con nuestros avanzados sistemas de alimentación automatizada. Programa y ajusta la distribución de alimentos según las necesidades específicas de cada animal, asegurando que reciban la cantidad adecuada de nutrientes en el momento oportuno. Estos sistemas no solo mejoran la salud y el bienestar de tu ganado, sino que también aumentan la eficiencia en la gestión de los recursos alimenticios y reducen el desperdicio. Con monitoreo continuo y ajustes automáticos, puedes estar seguro de que tus animales están bien alimentados en todo momento.</p>
+                    </div>
+                    <img src="images/servicios/alimentacion.jpg" alt="Alimentación Automatizada">
+                </div>
+                <div class="service_monitoreo">
+                    <img src="images/servicios/monitoreo.jpeg" alt="Monitoreo Remoto">
+                    <div class="content_right">
+                        <h2>Monitoreo Remoto</h2>
+                        <p>Mantén el control total de tu granja desde cualquier lugar con nuestro sistema de monitoreo remoto en tiempo real. Con esta tecnología, puedes supervisar diversas variables de tu operación agrícola, como la humedad del suelo, la temperatura, la calidad del aire y el estado de tus cultivos, todo desde la comodidad de tu dispositivo móvil o computadora. Esto te permite tomar decisiones informadas rápidamente, mejorar la eficiencia operativa y responder a cualquier problema antes de que se convierta en una amenaza para tu producción.</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </main>
 
@@ -269,7 +326,7 @@
                 <img src="images/SmartFarmLogo.jpeg" height="150" style="margin-left: 50px;">
             </div>
             <div style="flex: 1; justify-content: space-between; align-items: flex-start;">
-                <a href="#contactanos" style="display: block; margin-bottom: 10px;">Contáctanos</a>
+                <a href="contactanos.html" style="display: block; margin-bottom: 10px;">Contáctanos</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">&#x2709; info@smartfarm.pe</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Empresas</a>
                 <a href="#" style="display: block; margin-bottom: 10px;">Inscripción</a>
