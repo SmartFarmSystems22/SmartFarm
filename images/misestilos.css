@@ -1,3 +1,5 @@
+
+
 nav a {
     text-decoration: none;
     color: #fff;
@@ -398,155 +400,70 @@ footer a {
     font-size: 15px;
 }
 
-
-
-
-
-/*monitoreo*/
-body {
-    background-color: #ffffff;
-    color: #333;
-    font-family: 'Mulish', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  main {
-    margin-top: 20px;
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .camera-setup {
-    display: flex;
-    justify-content: center;
-    column-gap: 15px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-  
-  .main-view {
+#encabezado {
+    text-align: left;
+    padding: 10px 0;
     position: relative;
-    width: 100%;
-    max-width: 700px;
-  }
-  
-  .main-view img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .live-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  .camera-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
-  }
-  
-  .secondary-views {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .secondary-view {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .secondary-view img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .view-title {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  /* Estilos para la fila de botones */
-  .button-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-    background-color: #E8F5E9;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    background-color: #FFF;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .button img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .button i {
-    font-size: 24px;
-    color: #333;
-  }
-  
-  .button-label {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .button:hover {
-    transform: scale(1.1);
-  }
+    gap: 10px;
+}
 
-  /*Inicio*/
-  #recuadro1 h1 {
+#encabezado .contenido {
+    display: flex;           /* Establece flexbox para alinear elementos horizontalmente */
+    align-items: center;     /* Alinea los elementos verticalmente en el centro */
+    gap: 10px;               /* Espacio entre los elementos */
+}
+
+#encabezado h2 {
+    font-size: 35px;
+    color: #78C191;
+    padding: 0px 0;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+#encabezado h3 {
+    font-size: 35px;
+    color: #48835d;
+    font-weight: bold;
+    padding: 0px 0;
+}
+
+#encabezado a {
+    background-color: #96E500;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#encabezado p {
+    font-size: 15px;
+    color: #fff;
+    padding: 40px 0;
+    margin-left: 30px;
+}
+
+#encabezado .opciones {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recuadro1 {
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 2.25;
+    margin-right: 10px;
+}
+
+#recuadro1 h1 {
     color: #61aa7b;
     font-size: 23px;
     text-align: left;
@@ -675,75 +592,3 @@ body {
     text-align: center ;
     font-weight: bold;
 }
-
-/*Mi cuenta*/
-#encabezado2{
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.circular-image2 {
-    width: 200px;  /* Ajusta el tamaño de la imagen */
-    height: 200px; /* Asegúrate de que el alto y el ancho sean iguales */
-    border-radius: 50%; /* Hace que la imagen sea circular */
-    object-fit: cover;  /* Asegura que la imagen cubra completamente el contenedor */
-    text-align: center;
-}
-
-#datos{
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    gap: 10px;
-}
-
-#datos h1{
-    color: #61aa7b;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-#datos h2{
-    color: #000000;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-}
-
-
-#datos h3{
-    color: #000000;
-    font-size: 25px;
-    text-align: center;
-    font-weight: lighter;
-}
-
-.btn-Editar {
-    background-color: #61aa7b; /* Color rosado */
-    color: white; /* Color del texto */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    font-size: 20px; /* Tamaño del texto */
-    margin-bottom: 10px;
-    margin-top: 15px;
-}
-
-#profile-container {
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px;
-    background-color: #f9f9f9;
-    max-width: 600px; /* Ajusta esto según sea necesario */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Añade una sombra para darle profundidad */
-    margin-bottom: 10px;
-}
-
