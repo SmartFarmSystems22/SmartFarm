@@ -398,6 +398,7 @@ footer a {
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -547,6 +548,72 @@ body {
 
   /*Inicio*/
   #recuadro1 h1 {
+=======
+#encabezado {
+    text-align: left;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+#encabezado .contenido {
+    display: flex;           /* Establece flexbox para alinear elementos horizontalmente */
+    align-items: center;     /* Alinea los elementos verticalmente en el centro */
+    gap: 10px;               /* Espacio entre los elementos */
+}
+
+#encabezado h2 {
+    font-size: 35px;
+    color: #78C191;
+    padding: 0px 0;
+    margin-left: 30px;
+    font-weight: lighter;
+}
+
+#encabezado h3 {
+    font-size: 35px;
+    color: #48835d;
+    font-weight: bold;
+    padding: 0px 0;
+}
+
+#encabezado a {
+    background-color: #96E500;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+#encabezado p {
+    font-size: 15px;
+    color: #fff;
+    padding: 40px 0;
+    margin-left: 30px;
+}
+
+#encabezado .opciones {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#recuadro1 {
+    background-color: #ddd;
+    margin-left: 10px;
+    border-radius: 15px;
+    flex: 2.25;
+    margin-right: 10px;
+}
+
+#recuadro1 h1 {
+>>>>>>> f2cf1af6825c17f79b3fc975e4804386fe59b4c8
     color: #61aa7b;
     font-size: 23px;
     text-align: left;
@@ -674,6 +741,7 @@ body {
     font-size: 23px;
     text-align: center ;
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 /*Mi cuenta*/
@@ -747,3 +815,6 @@ body {
     margin-bottom: 10px;
 }
 
+=======
+}
+>>>>>>> f2cf1af6825c17f79b3fc975e4804386fe59b4c8
